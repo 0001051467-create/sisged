@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Acesso | Gestão Acadêmica</title><link rel="stylesheet" href="assets/css/style.css"></head>
+<body class="login-page" data-page="login">
+<section class="login-brand">
+  <div class="brand login-brand-logos"><div class="brand-logos"><img src="assets/img/logo-sesi.png" class="brand-logo brand-logo-sesi" alt="SESI"><img src="assets/img/logo-senai.png" class="brand-logo brand-logo-senai" alt="SENAI"></div><div class="brand-copy"><small>Sistema de Gestão Acadêmica</small></div></div>
+  <div class="login-quote">"Educação profissional que transforma vidas e impulsiona o desenvolvimento do Brasil."</div>
+  <div class="login-features"><span>▣ &nbsp; Gerenciamento completo de cursos e turmas</span><span>□ &nbsp; Controle de horários e frequência de aulas</span><span>▥ &nbsp; Relatórios e indicadores de desempenho</span></div>
+  <div class="login-footer">© 2025 FIEMG · SESI · SENAI · Todos os direitos reservados</div>
+</section>
+<section class="login-card"><div class="card-inner">
+  <h2>Acesse sua conta</h2>
+  <p class="muted">Versão de demonstração: qualquer CPF e senha entram. Os dados são fictícios.</p>
+  <form id="f">
+    <label>CPF<input type="text" placeholder="000.000.000-00" required autofocus></label>
+    <label>SENHA<div class="password"><input type="password" placeholder="••••••••" required><button type="button" class="eye" onclick="togglePassword(this)" title="Mostrar senha">◉</button></div></label>
+    <button class="btn primary" type="submit">Entrar</button>
+  </form>
+</div></section>
+<script src="assets/js/app.js"></script>
+<script>document.getElementById('f').addEventListener('submit',e=>{e.preventDefault();sessionStorage.setItem('sisged_user','demo');location.href='dashboard.html'})</script>
+</body></html>
